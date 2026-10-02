@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #202020; line-height: 1.6; }
+.hero { min-height: 70vh; padding: 24px 8%; background: #f3eee8; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+nav a { color: #202020; text-decoration: none; }
+.logo { font-size: 1.3rem; font-weight: 700; }
+.hero-content { max-width: 760px; padding: 120px 0 80px; }
+.eyebrow { font-size: .78rem; letter-spacing: .16em; font-weight: 700; }
+h1 { font-size: clamp(3rem, 8vw, 6rem); line-height: .95; margin: 18px 0; }
+h2 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.05; }
+h3 { font-size: 1.3rem; }
+.section { padding: 90px 8%; }
+.light { background: #f8f8f8; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.grid article { padding: 28px; border: 1px solid #ddd; border-radius: 14px; }
+.wide { max-width: 850px; font-size: 1.15rem; }
+.buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+.button { display: inline-block; padding: 13px 20px; border-radius: 999px; text-decoration: none; font-weight: 700; }
+.primary { background: #202020; color: white; }
+.secondary { border: 1px solid #202020; color: #202020; }
+.cta { padding: 100px 8%; text-align: center; background: #e8dfd5; }
+footer { padding: 30px 8%; text-align: center; font-size: .85rem; }
+@media (max-width: 800px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero-content { padding-top: 80px; }
+}
